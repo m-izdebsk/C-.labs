@@ -43,7 +43,7 @@
                     new P1_2().main(args);
                     break;
                 case "2.1":
-                    new P1_2().main(args);
+                    new P2_1().main(args);
                     break;
 
                 case "2.2":
