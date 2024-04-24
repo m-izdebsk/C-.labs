@@ -51,7 +51,7 @@
                     break;
 
                 case "2.3":
-                    new P1_2().main(args);
+                    new P2_3().main(args);
                     break;
 
                 case "2.4":
