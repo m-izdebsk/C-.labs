@@ -16,14 +16,12 @@ internal class P1_2
             try { 
             decimal data= decimal.Parse(Console.ReadLine());
                 decimal mps = (data*1000) / 3600;
-
                 Console.WriteLine("m/s="+mps);
             }catch (FormatException)
             {
                 Console.WriteLine("Wrong data!");
                 this.main(args);
             }
-
         }
     }
 }
