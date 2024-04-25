@@ -21,7 +21,7 @@ internal class P1_3
                     Console.WriteLine("Ile % F/Vat?:");
                     decimal vat = decimal.Parse(Console.ReadLine());
                     decimal kwota = Math.Round(netto + netto * (vat/100), 2);
-                    Console.WriteLine("Kwota brutton:"+kwota);
+                    Console.WriteLine("Kwota brutto:"+kwota);
             }catch (FormatException ex) {
                 Console.WriteLine("Wrong data!");
                 this.main(args);
