@@ -17,7 +17,6 @@ internal class P1_9
             //Program powinien podać, ile składników policzył i ile wynosi suma.
             //Napisz trzykrotnie ten program -przy użyciu pętli for, while, do while.
 
-            int numberOfNumbers = 10;
             int maxValue = 100;
             int currentValue = 0;
             int step = 0;
@@ -39,12 +38,8 @@ internal class P1_9
             do { currentValue += step;
                 step++;
             }
-            
             while(currentValue < maxValue);
             Console.WriteLine("do while:"+(currentValue-step+1));
-
-
-
         }
     }
 }
