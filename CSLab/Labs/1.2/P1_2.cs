@@ -11,10 +11,19 @@ internal class P1_2
 
     public void main(String[] args)
     {
-        //Napisz w edytorze tekstowym program w C# wypisujący tekst podany jako parametr uruchomienia. Skompiluj z linii komend i uruchom.
-        Console.WriteLine("Program 1.1:\nEnter text:");
-        string intput = Console.ReadLine();
-        Console.WriteLine("Entered: "+intput);
+            //Napisz program przeliczający km/h na m/s. Program prosi o podanie wartości w km/h, dokonuje przeliczenia i wypisuje tę wartość w m/s.
+            Console.WriteLine("Enter km/h");
+            try { 
+            decimal data= decimal.Parse(Console.ReadLine());
+                decimal mps = (data*1000) / 3600;
+
+                Console.WriteLine("m/s="+mps);
+            }catch (FormatException)
+            {
+                Console.WriteLine("Wrong data!");
+                this.main(args);
+            }
+
+        }
     }
-}
 }
