@@ -20,18 +20,15 @@ internal class P1_9
             int numberOfNumbers = 10;
             int maxValue = 100;
             int currentValue = 0;
-            for(int i = 0; i < maxValue; i++)
+            int step = 0;
+            for(int i = 0; i < maxValue; i+=step)
             {
-                int newValue = currentValue + i;
-                if(maxValue<newValue)
-                {
-                    break;
-                }
-                currentValue = newValue;
+                step++;
+                currentValue = i;
             }
             Console.WriteLine("for:"+currentValue);
             currentValue = 0;
-            int step= 0;
+            step= 0;
             while(currentValue <= maxValue) { 
             currentValue = currentValue + step;
                 step++;
