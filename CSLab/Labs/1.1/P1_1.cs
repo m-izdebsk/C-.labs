@@ -8,7 +8,6 @@ namespace CSLab
 {
 internal class P1_1
 {
-
     public void main(String[] args)
     {
         //Napisz w edytorze tekstowym program w C# wypisujący tekst podany jako parametr uruchomienia. Skompiluj z linii komend i uruchom.
