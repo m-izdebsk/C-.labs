@@ -11,10 +11,22 @@ internal class P1_7
 
     public void main(String[] args)
     {
-        //Napisz w edytorze tekstowym program w C# wypisujący tekst podany jako parametr uruchomienia. Skompiluj z linii komend i uruchom.
-        Console.WriteLine("Program 1.1:\nEnter text:");
-        string intput = Console.ReadLine();
-        Console.WriteLine("Entered: "+intput);
-    }
+            if (args.Length == 0) {
+                throw new ArgumentException("Missing args");
+            }
+            //wczytanie wagi
+            Console.Write("Podaj wage w kg: ");
+            //Wczytanie danych z linii polecen args[0] i args[1]
+            decimal waga = Decimal.Parse(args[0]);
+
+            Console.WriteLine("Podaj wzrost w metrach");
+            decimal wzrost = decimal.Parse(args[1]);
+
+            Console.WriteLine("obliczanie BMI");
+            Console.WriteLine(waga);
+            decimal bmi = waga / (wzrost * wzrost);
+            Console.WriteLine("Twoj BMI wynosi: " + bmi.ToString("0.##"));
+          
+        }
 }
 }

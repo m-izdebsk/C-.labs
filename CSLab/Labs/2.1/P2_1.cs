@@ -23,9 +23,6 @@ namespace CSLab
             }
             Console.WriteLine("Suma: "+ints.Sum());
             Console.WriteLine("Avg: "+(ints.Sum()/ints.Length));
-
-
-
         }
     }
 }
