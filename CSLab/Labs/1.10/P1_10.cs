@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace CSLab
 {
-    internal class P1_2
+internal class P1_10
+{
 
+    public void main(String[] args)
     {
-        public void main(string[] args) { 
-        
-        
-        }
+       //
+
     }
+}
 }

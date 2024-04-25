@@ -16,31 +16,31 @@
                     new P1_2().main(args);
                     break;
                 case "1.3":
-                    new P1_2().main(args);
+                    new P1_3().main(args);
                     break;
                 case "1.4":
-                    new P1_2().main(args);
+                    new P1_4().main(args);
                     break;
                 case "1.5":
-                    new P1_2().main(args);
+                    new P1_5().main(args);
                     break;
                 case "1.6":
-                    new P1_2().main(args);
+                    new P1_6().main(args);
                     break;
                 case "1.7":
-                    new P1_2().main(args);
+                    new P1_7().main(args);
                     break;
                 case "1.8":
-                    new P1_2().main(args);
+                    new P1_8().main(args);
                     break;
                 case "1.9":
-                    new P1_2().main(args);
+                    new P1_9().main(args);
                     break;
                 case "1.10":
-                    new P1_2().main(args);
+                    new P1_10().main(args);
                     break;
                 case "1.11":
-                    new P1_2().main(args);
+                    new P1_11().main(args);
                     break;
                 case "2.1":
                     new P2_1().main(args);
