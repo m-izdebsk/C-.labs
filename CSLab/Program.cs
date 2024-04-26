@@ -58,6 +58,14 @@
                     new P2_4().main(args);
 
                     break;
+                    
+                case "2.5":
+                    new P2_5().main(args);
+
+                    break;
+                    
+
+
 
                 default:
                     new Exception();

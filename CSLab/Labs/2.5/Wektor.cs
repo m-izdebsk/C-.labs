@@ -61,5 +61,16 @@ namespace CSLab
             }
             return new Wektor(Wymiar, result);
         }
+        public override string ToString()
+        {
+            String elements = "[";
+            foreach (var item in Wspolrzedne)
+            {
+                elements += item+",";
+            }
+            elements = elements.Remove(elements.Length-1);
+            elements += "]";
+            return "Wektor: Wymiar:" + Wymiar + " elements:" + elements;
+        }
     }
 }

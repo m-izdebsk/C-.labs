@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Numerics;
 using System.Security.Cryptography;
@@ -24,46 +25,24 @@ d.Dostarcz metodę, która zsumuje wszystkie współrzędne wektora.
 e.Dostarcz metodę zwracającą wektor, która doda do siebie wywołujący ją wektor i wektor podany jako argument Wektor add(Wektor).
 
         */
-        public decimal randUniqueNumber(int start, int end, ArrayList values)
-        {
-            Random random = new Random();
-            int randomNumber = random.Next(start, end);
-            if(values.Contains(randomNumber))
-            {
-                return randUniqueNumber(start, end, values);
-            }
-            else { 
-                return randomNumber;
-            }
-        }
+
         public void main(string[] args)
         {
-            //Wylosuj 5 liczb całkowitych w zakresie od 0 do 1000.
-            //Następnie zbuduj tablicę, której wiersze będą tablicami
-            //przechowującymi kolejne cyfry każdej z liczb.
-            //
-            //Użyj możliwie najmniej elementów tablicy.
-            ArrayList randoms = new ArrayList { };
-            object[] list = new object[5];
-            for (int i = 0; i < 5; i++) {
-                decimal random = randUniqueNumber(1, 5000, randoms);
-                decimal[] newdecimal = new decimal[random.ToString().Length];
-                for (int k = 0; k < random.ToString().Length; k++) {
-                    char vkey = random.ToString()[k];
-                    newdecimal[k] = decimal.Parse(vkey.ToString());
-                }
-                list[i]=newdecimal;
-            }
+            Wektor wektor = new Wektor(1, [1, 1, 1]);
+            Wektor wektor2 = new Wektor(1, [1, 1, 1]);
+            Wektor wektor3 = new Wektor(1, [2, 2, 2]);
+            Wektor wektor4= new Wektor(2, [1, 2, 3.3]);
+            
 
-            foreach (var item in list)
-            {
-
-                foreach(var value in (decimal[])item)
-                {
-                    Console.Write(value);
-                }
-                Console.WriteLine();
-            }
+            //test sum
+            double suma = wektor.sum();
+            Debug.Assert(suma == 3);
+            //test adding vectors
+            Wektor wektorOut = wektor.add(wektor2);
+            Debug.Assert(wektorOut.ToString()==wektor3.ToString());
+            //test show
+            wektor.show();
+            
         }
     }
 }
