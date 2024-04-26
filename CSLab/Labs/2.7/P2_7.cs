@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSLab.Labs._2._7;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace CSLab
     {
         public void main(string[] args)
         {
+            Sprzedaz sprzedaz = new Sprzedaz("test", 1, 12);
+            sprzedaz.printData();
 
         }
     }
