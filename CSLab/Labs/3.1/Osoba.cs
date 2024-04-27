@@ -28,6 +28,9 @@ III.1.  Kod bazowy w projekcie klasy 2_1
             return this.Nazwisko;
         }
 
-
+        internal double getBmi()
+        {
+            return this.Bmi;
+        }
     }
 }
