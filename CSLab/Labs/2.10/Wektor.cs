@@ -59,7 +59,7 @@ namespace CSLab.Labs
 
             ArrayList myAL = new ArrayList();
             while (true) {
-                Console.WriteLine("Enter new wektor value, press q if you want to leavey...");
+                Console.WriteLine("Enter new wektor value, press q if you want to leave...");
                 string outputValuey = Console.ReadLine();
                 if (outputValuey.ToLower() == "q") {
                     break;
