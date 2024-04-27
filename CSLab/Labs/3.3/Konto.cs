@@ -65,6 +65,26 @@ namespace CSLab.Labs._3._3
             }
             transakcja.wypiszNaKonsole();
         }
- 
+
+        //Zdefiniuj indeksator, który umożliwi dostęp do transakcji wykonanych
+        //na koncie za pomocą zapisu: konto1[‘uznania’][12] –
+        //oznacza dostęp do 12-stej transakcji uznającej (wpływu na konto) dla konta konto1.
+
+        public Transakcja[] this[string rodzajTransakcji]
+        {
+            get
+            {
+                int rowIndex = rodzajTransakcji == "uznania" ? 0 : 1; // Określenie indeksu wiersza na podstawie rodzaju transakcji
+                Transakcja[] row = new Transakcja[transakcje.GetLength(1)];
+
+                for (int i = 0; i < transakcje.GetLength(1); i++)
+                {
+                    row[i] = transakcje[rowIndex, i];
+                }
+
+                return row;
+            }
+        }
+
     }
 }
