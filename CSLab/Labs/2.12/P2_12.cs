@@ -17,12 +17,8 @@ Wykonaj niezbędne korekty w konstruktorach i metodach klasy, aby zachować popr
             Produkt2 produkt=new Produkt2("cukier",1.43f,"kg",DateTime.Now,23);
             Sprzedaz2 sp = new Sprzedaz2(produkt, 10, 10);
             Zamowienie2 zam = new Zamowienie2(DateTime.Now, osoba2.Imie + osoba2.Nazwisko);
-
             zam.DodajPozycje(sp);
-
             zam.info();
-
-
         }
     }
 }
