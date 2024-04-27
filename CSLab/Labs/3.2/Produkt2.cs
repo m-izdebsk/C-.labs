@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,12 +18,14 @@ W klasie Produkt:
 
 */
 namespace CSLab.Labs._3._2
-{  
+{
     public class Produkt2
     {
-        string nazwa;
-        float cena;
-        string jednostkaMiary;
+        private string nazwa;
+        private float cena;
+        //Zdefiniuj właściwość CenaDetaliczna obliczająca cenę po której będzie sprzedawany produkt.
+        private float cenaDetaliczna;
+        private string jednostkaMiary;
         DateTime dataZakupu;
         float VAT;
 
@@ -33,6 +37,34 @@ namespace CSLab.Labs._3._2
             this.jednostkaMiary = jednostka;
             this.dataZakupu = dataZakupu;
             this.VAT = vat;
+            this.cenaDetaliczna = this.cena + this.cena * (this.VAT / 100);
+        }
+        private object getValueByName(string propertyName)
+        {
+            FieldInfo fieldInfo = typeof(Produkt2).GetField(propertyName, BindingFlags.NonPublic | BindingFlags.Instance);
+            if (fieldInfo != null)
+            {
+                return fieldInfo.GetValue(this);
+            }
+            else
+            {
+                throw new ArgumentException($"Wartosc '{propertyName}' nie istnieje");
+            }
+        }
+        //Zdefiniuj indeksator pozwalający odwoływać się do pól obiektu przez klucz będący nazwą pola, np. p[“nazwa”]
+        public object this[string propertyName]
+        {
+            get
+            {
+                return getValueByName(propertyName);
+            }
+        }
+        public string getByName(string name) {
+            string value = "";
+
+
+
+            return value;        
         }
         public override string ToString() {
             return "Nazwa: "+this.nazwa+"\nCena:"+this.cena+"\nj.m.:"+this.jednostkaMiary+"\nData zakupu:"+this.dataZakupu+"\nVAT:"+this.VAT;
