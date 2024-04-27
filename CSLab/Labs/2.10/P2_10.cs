@@ -10,6 +10,10 @@ namespace CSLab
     {
         public void main(string[] args)
         {
+            Labs.Wektor wektor = Labs.Wektor.zbudujWektor();
+            wektor.show();
+            Labs.Wektor randomWektor = new Labs.Wektor(4, 1.0, 2.0);
+            randomWektor.show();
 
         }
     }
