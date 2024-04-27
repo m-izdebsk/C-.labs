@@ -26,6 +26,12 @@ namespace CSLab.Labs
         public int Wymiar;
         public double[] Wspolrzedne;
         public string quoteType = "[ ]";
+        public string getQuoteType() {
+                    return this.quoteType;
+                }
+        public void setQuoteType(String quote) { 
+           this.quoteType= quote;
+        }
         public Wektor(int wymiar, double[] wspolrzedne)
         {
             this.Wymiar = wymiar;
@@ -40,10 +46,10 @@ namespace CSLab.Labs
             this.Wspolrzedne = wspolrzedne;
         }
         //Zdefiniuj(lub uzupełnij jak już istnieje) konstruktor statyczny, który będzie prosił o podanie z konsoli typu nawiasów służących do wypisywania wektorów na konsoli.Wybrany znak powinien pamiętany jako  pole klasy. 
-        public static void setQuoteType() {
-            Console.WriteLine("Current quote type:"+this.quoteType);
+        public void setQuote() {
+            Console.WriteLine("Current quote type:"+getQuoteType());
             Console.WriteLine("Enter new quote types");
-            this.quoteType = Console.ReadLine();
+            setQuoteType(Console.ReadLine());
         }
 
         //W klasie Wektor zdefiniuj statyczną metodę zbudujWektor(),
@@ -82,6 +88,7 @@ namespace CSLab.Labs
         public void show()
         {
             Console.WriteLine("Współrzędne wektora:");
+            Console.WriteLine();
             foreach (var item in Wspolrzedne)
             {
                 Console.Write(Math.Round(item, 2).ToString().PadRight(6));
@@ -114,12 +121,18 @@ namespace CSLab.Labs
         public override string ToString()
         {
             String elements = "[";
+            String ending = "]";
+            if (getQuoteType != null && getQuoteType().Split(" ").Length==2)
+            {
+                elements = getQuoteType().Split(" ")[0];
+                ending= getQuoteType().Split(" ")[1];
+            }
             foreach (var item in Wspolrzedne)
             {
                 elements += item+",";
             }
             elements = elements.Remove(elements.Length-1);
-            elements += "]";
+            elements += ending;
             return "Wektor: Wymiar:" + Wymiar + " elements:" + elements;
         }
     }
