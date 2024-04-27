@@ -3,8 +3,10 @@ using CSLab.Labs._2._9;
 using CSLab.Labs._3._1;
 using CSLab.Labs._3._2;
 using CSLab.Labs._3._3;
+using CSLab.Labs._3._5;
+using CSLab.Labs._3._6;
 
-namespace CSLab
+namespace CSLab.Labs._3._4
 {
     internal class Program
     {
@@ -116,9 +118,17 @@ namespace CSLab
                     new P3_4().main(args);
                 break;
                     
+                                                        
                 case "3.5":
                     new P3_5().main(args);
                 break;
+                    
+                                                        
+                case "3.6":
+                    new P3_6().main(args);
+                break;
+                    
+                
                     
 
 
