@@ -22,6 +22,17 @@ namespace CSLab
             Transakcja t33 = new Transakcja(DateTime.Now.AddDays(-22), "Test title 3", -3);
             Transakcja t44 = new Transakcja(DateTime.Now.AddDays(-100), "Test title 4", -4);
             Konto konto = new Konto("asdfadsf", "Test user", DateTime.Now.AddDays(-100));
+            konto.WypiszInformacjeOKoncie();
+            t1.wypiszNaKonsole();
+
+            konto.dodajTransackje(t1);
+            konto.dodajTransackje(t2);
+            konto.dodajTransackje(t3);
+            konto.dodajTransackje(t4);
+            konto.dodajTransackje(t11);
+            konto.dodajTransackje(t22);
+            konto.dodajTransackje(t33);
+            konto.dodajTransackje(t44);
 
 
 

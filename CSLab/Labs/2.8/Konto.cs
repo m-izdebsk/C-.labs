@@ -16,6 +16,8 @@ namespace CSLab.Labs._2._8
 
         // Pole przechowujące transakcje (ostatnie 500 uznających, ostatnie 1000 obciążających)
         private Transakcja[,] transakcje = new Transakcja[2, 1000]; // 2 wiersze: uznania i obciążenia
+        private int uznania=0;
+        private int obciazenia=0;
 
         // Konstruktor klasy Konto
         public Konto(string numerKonta, string wlasciciel, DateTime dataUtworzenia)
@@ -38,5 +40,19 @@ namespace CSLab.Labs._2._8
         {
             return $"Numer konta: {numerKonta}\nWłaściciel: {wlasciciel}\nData utworzenia: {dataUtworzenia}";
         }
+
+        public void dodajTransackje(Transakcja transakcja) {
+            if (transakcja.getKwota() > 0)
+            {
+                this.transakcje[0,uznania] = transakcja;
+                uznania++;
+            }
+            else {
+                this.transakcje[1, obciazenia] = transakcja;
+                obciazenia++;
+            }
+            transakcja.wypiszNaKonsole();
+        }
+ 
     }
 }
