@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSLab
+namespace CSLab.Labs._2._9
 {
     internal class P2_9
     {

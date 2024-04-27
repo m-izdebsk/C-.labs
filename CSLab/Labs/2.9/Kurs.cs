@@ -1,7 +1,7 @@
 ﻿using CSLab.Labs._2._9;
 
 
-namespace CSLab
+namespace CSLab.Labs._2._9
 {
     class Kurs
     {

@@ -1,4 +1,7 @@
-﻿namespace CSLab
+﻿using CSLab.Labs._2._7;
+using CSLab.Labs._2._9;
+
+namespace CSLab
 {
     internal class Program
     {

@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSLab.Labs._2._9
+namespace CSLab.Labs._2._12
 {
-    class Osoba
+    class Osoba2
     {
         public string Imie;
 
         public string Nazwisko;
-        public Osoba(string imie, string nazwisko) {
+        public Osoba2(string imie, string nazwisko) {
             this.Imie = imie;
             this.Nazwisko = nazwisko;
         }

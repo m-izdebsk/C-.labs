@@ -1,11 +1,4 @@
-﻿using CSLab.Labs._2._7;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSLab
+﻿namespace CSLab.Labs._2._7
 {
     internal class P2_7
     {
