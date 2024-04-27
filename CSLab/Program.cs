@@ -127,15 +127,10 @@ namespace CSLab.Labs._3._4
                 case "3.6":
                     new P3_6().main(args);
                 break;
-                    
-                
-                    
-
-
 
                 default:
                     new Exception();
-                    break;
+                break;
 
             }
 

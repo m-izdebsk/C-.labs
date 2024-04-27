@@ -135,5 +135,21 @@ namespace CSLab.Labs._3._4
             elements += ending;
             return "Wektor: Wymiar:" + Wymiar + " elements:" + elements;
         }
+
+        //W klasie Wektor zdefiniuj indeksator pozwalający na dostęp do współrzędnych wektora v za pomocą zapisu v[i]
+
+        public double this[int indeks]
+        {
+            get
+            {
+                if (indeks < 0 || indeks >= Wymiar)
+                {
+                    throw new IndexOutOfRangeException("Indeks poza zakresem.");
+                }
+
+                // Zwróć wartosc i z indeksu
+                return Wspolrzedne[indeks];
+            }
+        }
     }
 }
