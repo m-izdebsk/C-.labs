@@ -1,11 +1,4 @@
-﻿using CSLab.Labs._2._8;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CSLab
+﻿namespace CSLab
 {
     //Przetestuj działanie obiektów klasy Konto pisząc odpowiedni kod testowy w metodzie Main() (zdefiniowanej w pliku ‘Program.cs’).
 
@@ -33,11 +26,6 @@ namespace CSLab
             konto.dodajTransackje(t22);
             konto.dodajTransackje(t33);
             konto.dodajTransackje(t44);
-
-
-
-
-
         }
     }
 }
