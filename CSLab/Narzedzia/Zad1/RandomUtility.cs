@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSLab.NewFolder
+namespace CSLab.Narzedzia.Zad1
 {
     class RandomUtility
     {
@@ -23,7 +23,7 @@ namespace CSLab.NewFolder
         //metoda losujaca double z zakresu
         public static double randomDouble(double start, double end)
         {
-            return start + (random.NextDouble() * (end - start));
+            return start + random.NextDouble() * (end - start);
         }
 
         //metoda losujaca do generowania lancucha znakowego

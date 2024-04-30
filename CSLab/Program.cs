@@ -5,7 +5,8 @@ using CSLab.Labs._3._2;
 using CSLab.Labs._3._3;
 using CSLab.Labs._3._5;
 using CSLab.Labs._3._6;
-using CSLab.NewFolder;
+using CSLab.Narzedzia.Zad1;
+using CSLab.Narzedzia.Zad2;
 
 namespace CSLab.Labs._3._4
 {
@@ -130,6 +131,9 @@ namespace CSLab.Labs._3._4
                 break;
                 case "4.1":
                     new Z4_1().main(args);
+                break;                
+                case "4.2":
+                    new Zad4_2().main(args);
                 break;
 
                 default:

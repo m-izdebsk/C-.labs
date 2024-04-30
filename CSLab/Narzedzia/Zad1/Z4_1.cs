@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSLab.NewFolder
+namespace CSLab.Narzedzia.Zad1
 {
     internal class Z4_1
     {
@@ -20,7 +20,7 @@ namespace CSLab.NewFolder
             Console.WriteLine(randomDecimal);
             Console.WriteLine(randomdouble);
             string randomstring = RandomUtility.randomString(10);
-          
+
             Console.WriteLine(randomstring);
             Console.WriteLine(randomint);
 
