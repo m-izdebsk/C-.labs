@@ -5,6 +5,7 @@ using CSLab.Labs._3._2;
 using CSLab.Labs._3._3;
 using CSLab.Labs._3._5;
 using CSLab.Labs._3._6;
+using CSLab.NewFolder;
 
 namespace CSLab.Labs._3._4
 {
@@ -126,6 +127,9 @@ namespace CSLab.Labs._3._4
                                                         
                 case "3.6":
                     new P3_6().main(args);
+                break;
+                case "4.1":
+                    new Z4_1().main(args);
                 break;
 
                 default:
