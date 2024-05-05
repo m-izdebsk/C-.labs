@@ -7,6 +7,7 @@ using CSLab.Labs._2._9;
 using CSLab.Labs._3._1;
 using CSLab.Labs._3._2;
 using CSLab.Labs._3._3;
+using CSLab.Labs._3._4.Lab4.Zad7_2;
 using CSLab.Labs._3._5;
 using CSLab.Labs._3._6;
 using CSLab.Narzedzia.Zad1;
@@ -148,6 +149,9 @@ namespace CSLab.Labs._3._4
                     break;
                     case "5.3":
                     new Zad5_3().main(args); 
+                    break;
+                    case "7.2":
+                    new Zad7_2().main(args); 
                     break;
                 
                 default:
