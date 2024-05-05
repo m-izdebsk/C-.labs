@@ -1,4 +1,8 @@
-﻿using CSLab.Labs._2._7;
+﻿using CSLab.Lab3.zad4._1;
+using CSLab.Lab3.Zad4._4;
+using CSLab.Lab3.Zad5_2;
+using CSLab.Lab3.Zad5_3;
+using CSLab.Labs._2._7;
 using CSLab.Labs._2._9;
 using CSLab.Labs._3._1;
 using CSLab.Labs._3._2;
@@ -136,6 +140,16 @@ namespace CSLab.Labs._3._4
                     new Zad4_2().main(args);
                 break;
 
+                case "4.4a":
+                    new Zad4_4a().main(args); 
+                    break;
+                    case "5.2":
+                    new Zad5_2().main(args); 
+                    break;
+                    case "5.3":
+                    new Zad5_3().main(args); 
+                    break;
+                
                 default:
                     new Exception();
                 break;
