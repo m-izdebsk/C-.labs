@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CSLab.Labs._3._6;
 
-namespace CSLab.Labs._3._6
+/**/
+internal class Grupa
 {
-    /**/
-    class Grupa
+    public string Nazwa;
+    public int Rozmiar;
+
+    public Grupa(string nazwa)
     {
-        public string Nazwa;
-        public int Rozmiar;
-        public Grupa(string nazwa) { 
-            this.Nazwa= nazwa;
-        }
+        Nazwa = nazwa;
     }
 }

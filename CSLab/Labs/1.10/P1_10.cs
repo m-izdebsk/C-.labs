@@ -1,44 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CSLab;
 
-namespace CSLab
+internal class P1_10
 {
-    internal class P1_10
+    public void main(string[] args)
     {
+        //
+        Console.WriteLine("Enter a number 1-99(slownie)");
+        var numbersl = Console.ReadLine();
+        var number = numbersl.Split();
 
-        public void main(String[] args)
+        string[] unitsMap =
         {
-            //
-            Console.WriteLine("Enter a number 1-99(slownie)");
-            string numbersl = Console.ReadLine();
-            string[] number = numbersl.Split();
-
-            string[] unitsMap = { "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć", "dziesięć", "jedenaście", "dwanaście", "trzynaście", "czternaście", "piętnaście", "szesnaście", "siedemnaście", "osiemnaście", "dziewiętnaście" };
-            string[] tensMap = { "dwadzieścia", "trzydzieści", "czterdzieści", "pięćdziesiąt", "sześćdziesiąt", "siedemdziesiąt", "osiemdziesiąt", "dziewięćdziesiąt" };
-            int result = 0;
-            if (number.Length >0)
+            "jeden", "dwa", "trzy", "cztery", "pięć", "sześć", "siedem", "osiem", "dziewięć", "dziesięć", "jedenaście",
+            "dwanaście", "trzynaście", "czternaście", "piętnaście", "szesnaście", "siedemnaście", "osiemnaście",
+            "dziewiętnaście"
+        };
+        string[] tensMap =
+        {
+            "dwadzieścia", "trzydzieści", "czterdzieści", "pięćdziesiąt", "sześćdziesiąt", "siedemdziesiąt",
+            "osiemdziesiąt", "dziewięćdziesiąt"
+        };
+        var result = 0;
+        if (number.Length > 0)
+        {
+            var index = 1;
+            foreach (var unit in tensMap)
             {
-               
-            
-                    int index = 1;
-                    foreach (string unit in tensMap) {
-                        bool areDifferent = !unit.Equals(tensMap[index], StringComparison.OrdinalIgnoreCase);
+                var areDifferent = !unit.Equals(tensMap[index], StringComparison.OrdinalIgnoreCase);
 
-                        if (areDifferent) {
-                            result += (index * 10);
+                if (areDifferent)
+                {
+                    result += index * 10;
 
-                            break;
-                        }else { 
-                            index++;
-                        }
-                    }
+                    break;
+                }
 
-             
+                index++;
             }
-            Console.WriteLine("Rezultat:" + result); ;
         }
+
+        Console.WriteLine("Rezultat:" + result);
+        ;
     }
 }

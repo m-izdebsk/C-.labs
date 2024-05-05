@@ -1,16 +1,16 @@
-﻿namespace CSLab.Lab3.Zad4._5
+﻿namespace CSLab.Lab3.Zad4._5;
+
+public class Osoba
 {
-    public class Osoba
+    private int id;
+    public string Imie;
+
+    public string Nazwisko;
+    private int nrtel;
+
+    public Osoba(string imie, string nazwisko)
     {
-        public string Imie;
-        private int nrtel;
-        private int id;
-
-        public string Nazwisko;
-        public Osoba(string imie, string nazwisko) {
-            this.Imie = imie;
-            this.Nazwisko = nazwisko;
-        }
-
+        Imie = imie;
+        Nazwisko = nazwisko;
     }
 }

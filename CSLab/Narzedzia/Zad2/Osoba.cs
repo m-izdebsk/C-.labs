@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CSLab.Narzedzia.Zad2;
 
-namespace CSLab.Narzedzia.Zad2
+internal class Osoba
 {
-    class Osoba
+    public string Imie;
+
+    public string Nazwisko;
+
+    public Osoba(string imie, string nazwisko)
     {
-        public string Imie;
-
-        public string Nazwisko;
-        public Osoba(string imie, string nazwisko)
-        {
-            Imie = imie;
-            Nazwisko = nazwisko;
-        }
-
+        Imie = imie;
+        Nazwisko = nazwisko;
     }
 }

@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CSLab.Labs._2._12;
 
-namespace CSLab.Labs._2._12
+internal class Osoba2
 {
-    class Osoba2
+    public string Imie;
+
+    public string Nazwisko;
+
+    public Osoba2(string imie, string nazwisko)
     {
-        public string Imie;
-
-        public string Nazwisko;
-        public Osoba2(string imie, string nazwisko) {
-            this.Imie = imie;
-            this.Nazwisko = nazwisko;
-        }
-
+        Imie = imie;
+        Nazwisko = nazwisko;
     }
 }

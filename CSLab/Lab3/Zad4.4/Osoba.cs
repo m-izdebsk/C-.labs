@@ -1,20 +1,21 @@
-﻿namespace CSLab.Lab3.Zad4._4
+﻿namespace CSLab.Lab3.Zad4._4;
+
+public class Osoba
 {
-    public class Osoba
+    private int id;
+    public string Imie;
+
+    public string Nazwisko;
+    protected int nrtel;
+
+    public Osoba(string imie, string nazwisko)
     {
-        public string Imie;
-        protected int nrtel;
-        private int id;
+        Imie = imie;
+        Nazwisko = nazwisko;
+    }
 
-        public string Nazwisko;
-        public Osoba(string imie, string nazwisko) {
-            this.Imie = imie;
-            this.Nazwisko = nazwisko;
-        }
-
-        public override string ToString()
-        {
-            return this.Nazwisko+this.Imie;
-        }
+    public override string ToString()
+    {
+        return Nazwisko + Imie;
     }
 }

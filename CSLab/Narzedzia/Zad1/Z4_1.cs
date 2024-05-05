@@ -1,29 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace CSLab.Narzedzia.Zad1;
 
-namespace CSLab.Narzedzia.Zad1
+internal class Z4_1
 {
-    internal class Z4_1
+    internal void main(string[] args)
     {
+        //metoda testowa
+        var randomint = RandomUtility.randomInt(1, 10);
+        var randomdouble = RandomUtility.randomDouble(1, 10);
+        var randomDecimal = RandomUtility.randomDecimal(1, 10);
 
-        internal void main(string[] args)
-        {
+        Console.WriteLine(randomDecimal);
+        Console.WriteLine(randomdouble);
+        var randomstring = RandomUtility.randomString(10);
 
-            //metoda testowa
-            int randomint = RandomUtility.randomInt(1, 10);
-            double randomdouble = RandomUtility.randomDouble(1, 10);
-            decimal randomDecimal = RandomUtility.randomDecimal(1, 10);
-
-            Console.WriteLine(randomDecimal);
-            Console.WriteLine(randomdouble);
-            string randomstring = RandomUtility.randomString(10);
-
-            Console.WriteLine(randomstring);
-            Console.WriteLine(randomint);
-
-        }
+        Console.WriteLine(randomstring);
+        Console.WriteLine(randomint);
     }
 }
