@@ -1,6 +1,6 @@
 namespace CSLab.Lab3.Zad4._4;
 
-public class Zad4_4a
+public class Zad4_4
 {
     public void main(string[] args)
     {
