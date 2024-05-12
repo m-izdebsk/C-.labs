@@ -6,6 +6,7 @@ using CSLab.Lab3.Zad4._5;
 using CSLab.Lab3.Zad5_1;
 using CSLab.Lab3.Zad5_2;
 using CSLab.Lab3.Zad5_3;
+using CSLab.Lab4.Zad6_1;
 using CSLab.Lab4.Zad7_1;
 using CSLab.Lab4.Zad7_2;
 using CSLab.Labs._2._6;
@@ -199,6 +200,9 @@ internal class Program
 
 
 
+            case "6.1":
+                new Zad6_1().main(args);
+                break;   
             case "7.1":
                 new Zad7_1().main(args);
                 break;
