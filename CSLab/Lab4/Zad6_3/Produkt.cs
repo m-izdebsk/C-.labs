@@ -8,10 +8,10 @@ internal class Produkt
     private readonly string jednostkaMiary;
     private readonly string nazwa;
     private readonly float VAT;
-    private readonly Opakowanie opakowanie;
+    private Opakowanie opakowanie;
 
 
-    public Produkt(float cena, DateTime dataZakupu, string jm, string nazwa, float vat, Opakowanie opakowanie = default)
+    public Produkt(float cena, DateTime dataZakupu, string jm, string nazwa, float vat, Opakowanie? opakowanie = default)
     {
         this.cena = cena;
         this.dataZakupu = dataZakupu;
@@ -19,14 +19,17 @@ internal class Produkt
         this.nazwa= nazwa;
         this.VAT = vat;
         this.opakowanie = opakowanie;
-        
-        
     }
 
     public override string ToString()
     {
+        String suffix = "";
+        if (this.opakowanie != null) {
+            suffix = "\nOpakowanie:" + this.opakowanie.material + " Objetosc opakowania:" + this.opakowanie.obliczObjetosc();
+        
+        }
         return "Nazwa: " + nazwa + "\nCena:" + cena + "\nj.m.:" + jednostkaMiary + "\nData zakupu:" + dataZakupu +
-               "\nVAT:" + VAT;
+               "\nVAT:" + VAT+suffix;
     }
 
 }

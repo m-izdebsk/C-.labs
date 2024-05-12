@@ -11,8 +11,14 @@ namespace CSLab.Lab4.Zad6_3
     {
         public void main(string[] args)
         {
-            Opakowanie opakowanie = new Opakowanie(1, 2, 3, Material.Szklo);
+            Opakowanie opakowanie = new Opakowanie(10, 20, 20, Material.Papier);
             Console.WriteLine(opakowanie);
+            Produkt produkt = new Produkt(10, DateTime.Now, "kg", "cukier", 23);
+            Console.WriteLine(produkt);
+            
+            Produkt produkt2 = new Produkt(10, DateTime.Now, "kg", "cukier", 23,opakowanie);
+            Console.WriteLine(produkt2);
+
         }
     }
 }
