@@ -8,6 +8,7 @@ using CSLab.Lab3.Zad5_2;
 using CSLab.Lab3.Zad5_3;
 using CSLab.Lab4.Zad6_1;
 using CSLab.Lab4.Zad6_2;
+using CSLab.Lab4.Zad6_3;
 using CSLab.Lab4.Zad7_1;
 using CSLab.Lab4.Zad7_2;
 using CSLab.Labs._2._6;
@@ -16,7 +17,6 @@ using CSLab.Labs._2._9;
 using CSLab.Labs._3._1;
 using CSLab.Labs._3._2;
 using CSLab.Labs._3._3;
-using CSLab.Labs._3._4.Lab4.Zad7_2;
 using CSLab.Labs._3._5;
 using CSLab.Labs._3._6;
 using CSLab.Narzedzia.Zad1;
@@ -154,24 +154,24 @@ internal class Program
 
 
             case "4.1":
-                
+
                 new Zad4_1().main(args);
                 break;
 
 
 
-                
+
 
 
             case "4.2":
-                
+
                 new Zad4_2().main(args);
                 break;
 
 
-                
+
             case "4.3":
-                
+
                 new Zad4_3().main(args);
                 break;
 
@@ -180,17 +180,17 @@ internal class Program
 
             case "4.4":
                 new Zad4_4().main(args);
-            break;
-                   case "4.5":
+                break;
+            case "4.5":
                 new Zad4_5().main(args);
-            break;
+                break;
 
 
 
             case "5.1":
                 new Zad5_1().main(args);
                 break;
-                
+
             case "5.2":
                 new Zad5_2().main(args);
                 break;
@@ -198,28 +198,21 @@ internal class Program
             case "5.3":
                 new Zad5_3().main(args);
                 break;
-
-
-
             case "6.1":
                 new Zad6_1().main(args);
-                break;   
-
-                
+                break;
             case "6.2":
                 new Zad6_2().main(args);
-                break;   
-
-
-
+                break;
+            case "6.3":
+                new Zad6_3().main(args);
+                break;
             case "7.1":
                 new Zad7_1().main(args);
                 break;
-                
             case "7.2":
                 new Zad7_2().main(args);
                 break;
-
             default:
                 new Exception();
                 break;
