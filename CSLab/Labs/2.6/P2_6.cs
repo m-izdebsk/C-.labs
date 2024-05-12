@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using CSLab.Labs._2._6;
 
+
 /*
  *
 II.6 (nowy projekt ‘produkt’)
@@ -12,7 +13,7 @@ Zaimplementuj metodę Clone() tworzącą kopię obiektu.
 Przetestuj zaimplementowane składowe pisząc odpowiedni kod testowy w metodzie Main().
 
  */
-namespace CSLab;
+namespace CSLab.Labs._2._6;
 
 internal class P2_6
 {
