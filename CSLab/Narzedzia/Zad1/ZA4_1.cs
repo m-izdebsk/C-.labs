@@ -1,6 +1,6 @@
 ﻿namespace CSLab.Narzedzia.Zad1;
 
-internal class Z4_1
+internal class ZA4_1
 {
     internal void main(string[] args)
     {

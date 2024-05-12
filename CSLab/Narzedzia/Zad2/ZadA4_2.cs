@@ -2,7 +2,7 @@
 
 namespace CSLab.Narzedzia.Zad2;
 
-internal class Zad4_2
+internal class ZadA4_2
 {
     internal void main(string[] args)
     {

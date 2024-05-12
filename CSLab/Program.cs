@@ -1,4 +1,5 @@
-﻿using CSLab.Lab3.Zad4._4;
+﻿using CSLab.Lab3.zad4._1;
+using CSLab.Lab3.Zad4._4;
 using CSLab.Lab3.Zad5_2;
 using CSLab.Lab3.Zad5_3;
 using CSLab.Lab4.Zad7_2;
@@ -134,16 +135,26 @@ internal class Program
             case "3.6":
                 new P3_6().main(args);
                 break;
-            case "4.1":
-                new Z4_1().main(args);
+            case "a4.1":
+                new ZA4_1().main(args);
                 break;
-            case "4.2":
-                new Zad4_2().main(args);
+            case "a4.2":
+                new ZadA4_2().main(args);
                 break;
 
-            case "4.4a":
-                new Zad4_4a().main(args);
+
+
+
+            case "4.1":
+                
+                new Zad4_1().main(args);
                 break;
+            case "4.4":
+                new Zad4_4a().main(args);
+            break;
+
+
+
             case "5.2":
                 new Zad5_2().main(args);
                 break;
