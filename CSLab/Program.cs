@@ -3,6 +3,7 @@ using CSLab.Lab3.Zad4._2;
 using CSLab.Lab3.Zad4._3;
 using CSLab.Lab3.Zad4._4;
 using CSLab.Lab3.Zad4._5;
+using CSLab.Lab3.Zad5_1;
 using CSLab.Lab3.Zad5_2;
 using CSLab.Lab3.Zad5_3;
 using CSLab.Lab4.Zad7_2;
@@ -183,9 +184,14 @@ internal class Program
 
 
 
+            case "5.1":
+                new Zad5_1().main(args);
+                break;
+                
             case "5.2":
                 new Zad5_2().main(args);
                 break;
+
             case "5.3":
                 new Zad5_3().main(args);
                 break;
