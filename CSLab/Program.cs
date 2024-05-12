@@ -1,5 +1,6 @@
 ﻿using CSLab.Lab3.zad4._1;
 using CSLab.Lab3.Zad4._2;
+using CSLab.Lab3.Zad4._3;
 using CSLab.Lab3.Zad4._4;
 using CSLab.Lab3.Zad5_2;
 using CSLab.Lab3.Zad5_3;
@@ -160,6 +161,13 @@ internal class Program
             case "4.2":
                 
                 new Zad4_2().main(args);
+                break;
+
+
+                
+            case "4.3":
+                
+                new Zad4_3().main(args);
                 break;
 
 
