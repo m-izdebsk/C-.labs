@@ -11,7 +11,8 @@ namespace CSLab.Lab4.Zad6_3
     {
         public void main(string[] args)
         {
-       
+            Opakowanie opakowanie = new Opakowanie(1, 2, 3, Material.Szklo);
+            Console.WriteLine(opakowanie);
         }
     }
 }
