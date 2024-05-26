@@ -25,6 +25,13 @@ namespace CSLab.Lab5.Zad9_1
             wynik = poczatekZnaki("Tekst", 3);
             Console.WriteLine(wynik);
             Debug.Assert(wynik == "Tek");
+
+            MojaDelegacja wszystkieMetody = MetodyDelegacji.DoklejLiczbe;
+            wszystkieMetody += MetodyDelegacji.PowtorzString;
+            wszystkieMetody += MetodyDelegacji.PoczatkoweZnaki;
+            string all = wszystkieMetody("Tekst123", 2);
+            Console.WriteLine(all);
+            Debug.Assert(all == "Te");
         }
 
 
