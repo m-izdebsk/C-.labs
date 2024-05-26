@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace CSLab.Lab5
 {
-    internal class Zad7_3
+    internal class Zad8_3
     {
         
         public void main(string[]  args)

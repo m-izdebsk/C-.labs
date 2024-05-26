@@ -223,7 +223,7 @@ internal class Program
                 new Cwiczenie2().main(args);
                 break;
             case "8.3":
-                new Zad7_3().main(args);
+                new Zad8_3().main(args);
                 break;
             default:
                 new Exception();
