@@ -1,4 +1,7 @@
 ﻿
+using System.Diagnostics;
+
+
 namespace CSLab.Lab5.Zad9_1
 {
     internal class Zad9_1
@@ -6,13 +9,14 @@ namespace CSLab.Lab5.Zad9_1
         //Zdefiniuj delegację reprezentującą funkcje o dwóch argumentach typu string i int, zwracające wynik typu string.
         public delegate string MojaDelegacja(string tekst, int liczba);
 
-        public void main(string[] args) {
+        public void main(string[] args)
+        {
             MojaDelegacja doklej = MetodyDelegacji.DoklejLiczbe;
             MojaDelegacja powtorz = MetodyDelegacji.PowtorzString;
             MojaDelegacja poczatekZnaki = MetodyDelegacji.PoczatkoweZnaki;
             string wynik = doklej("Tekst", 123);
             Debug.Assert(wynik == "Tekst123");
-            Console.WriteLine(wynik);            
+            Console.WriteLine(wynik);
             wynik = powtorz("Tekst", 3);
             Console.WriteLine(wynik);
             Debug.Assert(wynik == "TekstTekstTekst");
@@ -41,8 +45,9 @@ namespace CSLab.Lab5.Zad9_1
         //metoda powtarzająca string tyle razy na ile wskazuje drugi argument
         public static string PowtorzString(string tekst, int liczba)
         {
-            string item="";
-            for (int i = 0; i < liczba; i++) {
+            string item = "";
+            for (int i = 0; i < liczba; i++)
+            {
                 item += tekst;
             }
             return item;
