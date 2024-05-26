@@ -22,6 +22,7 @@ using CSLab.Labs._3._6;
 using CSLab.Narzedzia.Zad1;
 using CSLab.Narzedzia.Zad2;
 using CSLab.Spr1.Cw1;
+using CSLab.Spr1.Cw2;
 
 namespace CSLab.Labs._3._4;
 
@@ -216,6 +217,9 @@ internal class Program
                 break;
             case "spr1":
                 new Sprawdzian1().main(args);
+                break; 
+            case "spr2":
+                new Cwiczenie2().main(args);
                 break;
             default:
                 new Exception();
