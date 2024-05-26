@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,11 +17,14 @@ namespace CSLab.Lab5.Zad9_1
             MojaDelegacja powtorz = MetodyDelegacji.PowtorzString;
             MojaDelegacja poczatekZnaki = MetodyDelegacji.PoczatkoweZnaki;
             string wynik = doklej("Tekst", 123);
+            Debug.Assert(wynik == "Tekst123");
+            Console.WriteLine(wynik);            
+            wynik = powtorz("Tekst", 3);
             Console.WriteLine(wynik);
-             wynik = powtorz("Tekst", 3);
-            Console.WriteLine(wynik);  
+            Debug.Assert(wynik == "TekstTekstTekst");
             wynik = poczatekZnaki("Tekst", 3);
             Console.WriteLine(wynik);
+            Debug.Assert(wynik == "Tek");
         }
 
 
@@ -38,7 +42,7 @@ namespace CSLab.Lab5.Zad9_1
         {
             string item="";
             for (int i = 0; i < liczba; i++) {
-                item += tekst+"\n";
+                item += tekst;
             }
             return item;
         }
