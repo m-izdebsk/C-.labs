@@ -12,9 +12,10 @@ namespace CSLab.Spr1.Cw2
         string marka{ get; set; }
         double pojemnoscSilnika { get; set; }
 
-        public abstract void WypiszKolor();
-        public abstract void WypiszMarke();
-        public abstract void WypiszPojemnoscSilnika();
+        //public abstract void WypiszKolor();
+        virtual public  void WypiszKolor() { Console.WriteLine("Kolor abstrakcyjny: " + this.kolor); }
+        virtual public  void WypiszMarke(){ Console.WriteLine("Marka abstrakcyjna: " + this.marka); }
+    virtual public void WypiszPojemnoscSilnika() { Console.WriteLine("Pojemnosc abstrakcyjna: " + this.pojemnoscSilnika); }
     }
 
 }
