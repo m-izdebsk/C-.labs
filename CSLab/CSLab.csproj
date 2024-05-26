@@ -7,4 +7,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Spr1\Cw2\" />
+    </ItemGroup>
+
 </Project>
