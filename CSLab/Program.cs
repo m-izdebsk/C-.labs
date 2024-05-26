@@ -12,6 +12,7 @@ using CSLab.Lab4.Zad6_3;
 using CSLab.Lab4.Zad7_1;
 using CSLab.Lab4.Zad7_2;
 using CSLab.Lab5.Zad8_3;
+using CSLab.Lab5.Zad9_1;
 using CSLab.Labs._2._6;
 using CSLab.Labs._2._7;
 using CSLab.Labs._2._9;
@@ -224,6 +225,9 @@ internal class Program
                 break;
             case "8.3":
                 new Zad8_3().main(args);
+                break;
+            case "9.1":
+                new Zad9_1().main(args);
                 break;
             default:
                 new Exception();
