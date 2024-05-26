@@ -1,5 +1,4 @@
-﻿
-namespace CSLab.Lab5
+﻿namespace CSLab.Lab5.Zad8_3
 {
     public class MojaData
     {

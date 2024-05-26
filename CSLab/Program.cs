@@ -11,7 +11,7 @@ using CSLab.Lab4.Zad6_2;
 using CSLab.Lab4.Zad6_3;
 using CSLab.Lab4.Zad7_1;
 using CSLab.Lab4.Zad7_2;
-using CSLab.Lab5;
+using CSLab.Lab5.Zad8_3;
 using CSLab.Labs._2._6;
 using CSLab.Labs._2._7;
 using CSLab.Labs._2._9;
