@@ -11,6 +11,8 @@ using CSLab.Lab4.Zad6_2;
 using CSLab.Lab4.Zad6_3;
 using CSLab.Lab4.Zad7_1;
 using CSLab.Lab4.Zad7_2;
+using CSLab.Lab5.Zad8_1;
+using CSLab.Lab5.Zad8_2;
 using CSLab.Lab5.Zad8_3;
 using CSLab.Lab5.Zad9_1;
 using CSLab.Lab5.Zad9_3;
@@ -224,6 +226,12 @@ internal class Program
                 break; 
             case "spr2":
                 new Cwiczenie2().main(args);
+                break;
+            case "8.1":
+                new Zad8_1().main(args);
+                break;
+            case "8.2":
+                new Zad8_2().main(args);
                 break;
             case "8.3":
                 new Zad8_3().main(args);
