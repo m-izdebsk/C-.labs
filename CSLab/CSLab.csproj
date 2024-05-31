@@ -13,7 +13,6 @@
       <Folder Include="Lab6\Zad11_2\" />
       <Folder Include="Lab6\Zad10_3\" />
       <Folder Include="Lab6\Zad10_2\" />
-      <Folder Include="Lab6\Zad10_1\" />
     </ItemGroup>
 
 </Project>
