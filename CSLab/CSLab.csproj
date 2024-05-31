@@ -8,7 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Lab5\Zad9_2\" />
       <Folder Include="Lab6\Zad11_3\" />
       <Folder Include="Lab6\Zad11_4\" />
       <Folder Include="Lab6\Zad11_2\" />
