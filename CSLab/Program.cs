@@ -32,6 +32,7 @@ using CSLab.Narzedzia.Zad1;
 using CSLab.Narzedzia.Zad2;
 using CSLab.Spr1.Cw1;
 using CSLab.Spr1.Cw2;
+using CSLab.Spr2.Zad2_2;
 
 namespace CSLab.Labs._3._4;
 
@@ -230,6 +231,10 @@ internal class Program
             case "spr2":
                 new Cwiczenie2().main(args);
                 break;
+                case "spr3":
+                new Zad2_2().main(args);
+                break;
+
             case "8.1":
                 new Zad8_1().main(args);
                 break;
