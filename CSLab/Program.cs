@@ -37,6 +37,7 @@ using CSLab.Spr1.Cw1;
 using CSLab.Spr1.Cw2;
 using CSLab.Spr2.Zad2_1;
 using CSLab.Spr2.Zad2_2;
+using CSLab.Zad2._1;
 
 namespace CSLab.Labs._3._4;
 
@@ -277,6 +278,9 @@ internal class Program
                 break;            
             case "14.1":
                 new Zad14_1().main(args);
+                break;           
+            case "s2.1":
+                new Spr2_1().main(args);
                 break;
 
             default:
