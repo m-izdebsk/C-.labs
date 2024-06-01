@@ -20,6 +20,9 @@ using CSLab.Lab5.Zad9_2;
 using CSLab.Lab5.Zad9_3;
 using CSLab.Lab6.Zad10_1;
 using CSLab.Lab6.Zad11_1;
+using CSLab.Lab7.Zad12_1;
+using CSLab.Lab7.Zad13_1;
+using CSLab.Lab7.Zad14_1;
 using CSLab.Labs._2._6;
 using CSLab.Labs._2._7;
 using CSLab.Labs._2._9;
@@ -265,7 +268,17 @@ internal class Program
                 break;            
             case "11.1":
                 new Zad11_1().main(args);
+                break;     
+            case "12.1":
+                new Zad12_1().main(args);
                 break;
+            case "13.1":
+                new Zad13_1().main(args);
+                break;            
+            case "14.1":
+                new Zad14_1().main(args);
+                break;
+
             default:
                 new Exception();
                 break;
