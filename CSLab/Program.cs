@@ -21,7 +21,8 @@ using CSLab.Lab5.Zad9_3;
 using CSLab.Lab6.Zad10_1;
 using CSLab.Lab6.Zad11_1;
 using CSLab.Lab7.Zad12_1;
-using CSLab.Lab7.Zad13_1;
+using CSLab.Lab7.Zad13_1a;
+using CSLab.Lab7.Zad13_1b;
 using CSLab.Lab7.Zad14_1;
 using CSLab.Labs._2._6;
 using CSLab.Labs._2._7;
@@ -275,9 +276,12 @@ internal class Program
             case "12.1":
                 new Zad12_1().main(args);
                 break;
-            case "13.1":
-                new Zad13_1().main(args);
-                break;            
+            case "13.1a":
+                new Zad13_1a().main(args);
+                break;
+            case "13.1b":
+                new Zad13_1b().main(args);
+                break;
             case "14.1":
                 new Zad14_1().main(args);
                 break;           
